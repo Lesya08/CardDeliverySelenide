@@ -16,7 +16,6 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.3.3'
     testImplementation 'com.codeborne:selenide:6.17.2'
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.8.3'
     implementation 'ch.qos.logback:logback-classic:1.4.6'
     implementation 'com.epam.reportportal:logger-java-log4j:5.0.2'
     compileOnly 'log4j:log4j:1.2.17'
