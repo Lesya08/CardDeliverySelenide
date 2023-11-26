@@ -1,6 +1,8 @@
 package ru.netology.selenide;
 
 import com.codeborne.selenide.Condition;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -26,7 +28,7 @@ public class CardDeliveryTest {
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(planingDate);
         $("[data-test-id='name'] input").setValue("Петров-Иванов Иван");
-        $("[data-test-id='phone'] input").setValue("+78302080000");
+        $("[data-test-id='phone'] input").setValue("+78402080000");
         $("[data-test-id='agreement']").click();
         $("button.button").click();
         $(byText("Успешно!")).shouldBe(Condition.visible, Duration.ofSeconds(15));
